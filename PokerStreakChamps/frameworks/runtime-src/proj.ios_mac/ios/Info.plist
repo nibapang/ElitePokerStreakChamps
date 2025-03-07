@@ -31,8 +31,6 @@
 	</dict>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Elite PokerStreak Champs would like permission to access your device information to help personalize your experience and improve app functionality through data analysis.</string>
-	<key>UIApplicationExitsOnSuspend</key>
-	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
