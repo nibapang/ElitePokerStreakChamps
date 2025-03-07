@@ -9,7 +9,7 @@
 
 @implementation Gifrnlpblmoiavel
 
-+ (void) onStart
++ (void)onStart
 {
 }
 
