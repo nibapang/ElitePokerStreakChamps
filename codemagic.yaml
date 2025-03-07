@@ -21,14 +21,14 @@ workflows:
           keychain add-certificates --verbose
       - name: Install pods
         script: |
-          cd ElitePokerStreakChamps/PokerStreakChamps/frameworks/runtime-src/proj.ios_mac
+          cd PokerStreakChamps/frameworks/runtime-src/proj.ios_mac
           pod install --repo-update --verbose
       - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles --verbose
       - name: Build ipa for distribution
         script: |
-          xcode-project build-ipa --workspace "ElitePokerStreakChamps/PokerStreakChamps/frameworks/runtime-src/proj.ios_mac/PokerStreakChamps.xcworkspace" --scheme "PokerStreakChamps" --config Release --verbose
+          xcode-project build-ipa --workspace "PokerStreakChamps/frameworks/runtime-src/proj.ios_mac/PokerStreakChamps.xcworkspace" --scheme "PokerStreakChamps" --config Release --verbose
           
     artifacts:
       - build/ios/ipa/*.ipa
